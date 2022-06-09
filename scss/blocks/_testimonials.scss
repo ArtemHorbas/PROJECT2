@@ -1,0 +1,51 @@
+.testimonials {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.testi-heading {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+	margin-bottom: 60px;
+}
+
+.testi-heading--title{
+	max-width: 455px;
+}
+
+.testi-heading--text{
+	max-width: 400px;
+	text-align: end;
+}
+
+.testi-row {
+	position: relative;
+	
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 30px;
+	
+	a{
+		color: $accent-main-color;
+	}
+
+	&::after{
+		position: absolute;
+		content: '';
+		right: -40px;
+		top: -40px;
+		width: 80px;
+		height: 80px;
+		background-image: url('/img/testemonials/pac-man.svg');
+		background-repeat: no-repeat;
+	}
+
+}
+
+@media (max-width: 1215px){
+	.testi-row::after{
+		left: -20px;
+	}
+}

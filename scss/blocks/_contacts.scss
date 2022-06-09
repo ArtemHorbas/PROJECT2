@@ -1,0 +1,64 @@
+.contacts {
+	position: relative;
+	
+	padding-top: 50px;
+	color: #fff;
+	background-image: url('/img/footer/Mask.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	&::before{
+		position: absolute;
+		bottom: 0;
+		right: 15%;
+		content: "";
+		display: block;
+		width: 743px;
+		height: 342px;
+		background-image: url('/img/footer/oval_footer.svg');
+		background-size: initial;
+	}
+}
+
+
+.contacts-row {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+}
+.contacts-info {
+	max-width: 360px;
+		
+	p{
+		margin-bottom: 30px;
+		max-width: 322px;
+	}
+}
+
+.contact-title{
+	margin-bottom: 15px;
+}
+
+.contacts-img{
+	img{
+		margin-left: 80px;
+	}
+}
+
+
+@media (max-width: 1140px){
+	.contacts-img{
+		img{
+			margin-left: 0px;
+		}
+	}
+}
+
+@media (max-width: 862px){
+	.contacts-img{
+		img{
+			margin-left: -10px;
+		}
+	}
+}
+

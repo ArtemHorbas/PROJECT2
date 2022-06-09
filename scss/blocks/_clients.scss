@@ -1,0 +1,18 @@
+.clients {
+	padding-top: 100px;
+	padding-bottom: 45px;
+}
+.clients_row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@media (max-width: 862px) {
+	.clients_row {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		grid-row-gap: 30px;
+	}
+}

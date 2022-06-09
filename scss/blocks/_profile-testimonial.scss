@@ -1,0 +1,78 @@
+.testi-profile{
+	display: inline-block;
+	border-radius: 5px;
+	overflow: hidden;
+
+	&:hover .testi-body--city{
+		color: $accent-color;
+	}
+
+	transition: box-shadow 0.2s ease-in;
+
+	&:hover{
+		box-shadow: 0px 10px 52px rgba(0, 0, 0, 0.18);
+	}
+}
+
+.testi-profile--imgWrapper{
+	position: relative;
+}
+
+.testi-profile--icon{
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	transform: translateY(50%);
+	opacity: 0;
+	transition: opacity 0.2s ease-in, transform 0.2s ease-in;
+
+	.testi-profile:hover &{
+		transform: translateY(0%);
+		opacity: 1;
+	}
+}
+
+.testi-profile--svg{
+	circle{
+		fill: #fff;
+		transition: fill 0.2s ease-in;
+	}
+	path{
+		fill: $accent-color;
+		transition: fill 0.2s ease-in;
+	}
+
+	&:hover{
+		circle{
+			fill: $accent-color;
+		}
+		path{
+			fill: #fff;
+		}
+	}
+}
+
+
+.testi-profile--body{
+	padding: 30px;
+
+	p{
+		max-width: 270px;
+		margin-bottom: 23px;
+	}
+}
+
+.testi-body--name{
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 27px;
+	letter-spacing: 0.6px;
+	color: $accent-main-color;
+	margin-bottom: 1px;
+}
+
+.testi-body--city{
+	color: #58BEBF;
+}
+
